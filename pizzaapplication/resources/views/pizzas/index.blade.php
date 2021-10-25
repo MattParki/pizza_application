@@ -24,5 +24,8 @@
 <div class="flex-center position-ref">
     <a href="/">Click Here to go back home!</a>
 </div>
+<div class="flex-center position-ref">
+    <a href="/">test</a>
+</div>
 
 @extends('templates.footer.footer')
