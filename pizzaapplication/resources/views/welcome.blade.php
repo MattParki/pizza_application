@@ -1,5 +1,5 @@
 @extends('templates.header.header')
-<div class="flex-center position-ref full-height">
+<div class="login-bar">
     @if (Route::has('login'))
         <div class="top-right links">
             @auth
@@ -13,8 +13,9 @@
             @endauth
         </div>
     @endif
+</div>
+<div class="flex-center position-ref full-height">
     <br />
-
     <div class="content">
         <img src="/img/pizza-house.png" alt="pizza house logo">
         <div class="title m-b-md">
@@ -27,4 +28,5 @@
         <br />
     </div>
 </div>
+
 @extends('templates.footer.footer')

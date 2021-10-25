@@ -1,5 +1,5 @@
-@extends('templates.header.header')
-
+@extends('layouts.app')
+@section('content')
 <div class="wrapper create-pizza">
     <h1>Create a New Pizza</h1>
     <form action="/pizzas" method="post">
@@ -28,11 +28,10 @@
             <input type="checkbox" name="toppings[]" value="olives">Olives<br />
         </fieldset>
         <input type="submit" value="Order Pizza">
-
     </form>
 </div>
 <div class="flex-center position-ref">
     <a href="/">Click Here to go back home!</a>
 </div>
 
-@extends('templates.footer.footer')
+@endsection

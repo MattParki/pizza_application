@@ -1,4 +1,5 @@
-@extends('templates.header.header')
+@extends('layouts.app')
+@section('content')
 
 <div class="wrapper pizza-details">
     <h1> Order for {{ $pizza->name }} </h1>
@@ -26,4 +27,4 @@
     <a href="/pizzas" class="back"><- Back to all pizzas</a>
 </div>
 
-@extends('templates.footer.footer')
+@endsection
