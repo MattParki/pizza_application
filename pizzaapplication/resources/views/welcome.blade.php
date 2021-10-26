@@ -1,9 +1,10 @@
 @extends('templates.header.header')
+<br />
 <div class="login-bar">
     @if (Route::has('login'))
         <div class="top-right links">
             @auth
-                <a href="{{ url('/home') }}">Home</a>
+                <a href="{{ url('/home') }}">CMS</a>
             @else
                 <a href="{{ route('login') }}">Login</a>
 
@@ -14,6 +15,7 @@
         </div>
     @endif
 </div>
+<br />
 <div class="flex-center position-ref full-height">
     <br />
     <div class="content">
@@ -23,7 +25,8 @@
         </div>
         <div>
             <p class="mssg">{{ session('mssg') }}</p>
-            <a href="/pizzas/create">Click Here to order your pizza!</a>
+            <!-- the route is dynamically responding to the name we setup in the routes file -->
+            <a href="{{ route('pizzas.create') }}">Click Here to order your pizza!</a>
         </div>
         <br />
     </div>
