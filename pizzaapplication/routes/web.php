@@ -23,6 +23,8 @@ Route::post('/pizzas', [PizzaController::class, 'store']);
 Route::get('/pizzas/{id}', [PizzaController::class, 'show'])->middleware('auth');
 Route::delete('/pizzas/{id}', [PizzaController::class, 'delete'])->middleware('auth');
 
-Auth::routes();
+Auth::routes([
+    'register' => false
+]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
