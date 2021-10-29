@@ -6,6 +6,29 @@ html, body {
   height: 100vh;
   margin: 0;
 }
+#testing1 {
+    display: inline-block;
+    margin-left: 100px;
+    color: #000000;
+}
+
+#testing2 {
+    display: inline-block;
+    margin-left: 50px;
+    color: #fd0000;
+}
+
+.mssg4 {
+    display: inline-block;
+    margin-left: 10px;
+    color: #09ff22;
+}
+
+#testing3 {
+    display: inline-block;
+    margin-left: 300px;
+    color: #002afd;
+}
 
 .full-height {
   height: 100vh;

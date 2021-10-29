@@ -4,7 +4,7 @@
     @if (Route::has('login'))
         <div class="top-right links">
             @auth
-                <a href="{{ url('/home') }}">CMS</a>
+                <a href="{{ url('home') }}">CMS</a>
             @else
                 <a href="{{ route('login') }}">Login</a>
 
@@ -26,7 +26,7 @@
         <div>
             <p class="mssg">{{ session('mssg') }}</p>
             <!-- the route is dynamically responding to the name we setup in the routes file -->
-            <a href="{{ route('pizzas.create') }}">Click Here to order your pizza!</a>
+            <a href="{{ route('pizzas.create') }}">Click here to order your pizza!</a>
         </div>
         <br />
     </div>

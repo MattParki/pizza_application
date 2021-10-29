@@ -13,9 +13,13 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                    <div>
+                        {{ __('You are now logged in!') }}
+                    </div><br />
 
-                    {{ __('You are logged in!') }}
+                    <br />
                     <p><a href="/pizzas">View all pizza orders</a></p>
+                    <p><a href="/pizzas/createthepizza">Click to create new pizzas</a></p>
                 </div>
             </div>
         </div>

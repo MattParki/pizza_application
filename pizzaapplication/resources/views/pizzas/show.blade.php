@@ -4,12 +4,14 @@
     <h1> Order for {{ $pizza->name }} </h1>
         <p class="type">Type - {{ $pizza->type }} </p>
         <p class="base">Base - {{ $pizza->base }} </p>
-        <p class="price">Price - {{ $pizza->price }} </p>
-        <p class="toppings">Extra Toppings: </p>
-        <ul>
-            @foreach ($pizza->toppings as $topping)
+            <?php if(isset($pizza->toppings)) {?>
+                <p class="toppings">Extra Toppings: </p>
+                <ul>
+                @foreach ($pizza->toppings as $topping)
                 <li> {{ $topping }} </li>
             @endforeach
+
+            <?php } ?>
         </ul>
     <div class="delete">
         <form action="/pizzas/{{ $pizza->id }}" method="post">

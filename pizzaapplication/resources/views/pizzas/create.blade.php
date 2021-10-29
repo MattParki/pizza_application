@@ -27,11 +27,15 @@
             <input type="checkbox" name="toppings[]" value="garlic">Garlic<br />
             <input type="checkbox" name="toppings[]" value="olives">Olives<br />
         </fieldset>
+
         <input type="submit" value="Order Pizza">
     </form>
+
+
 </div>
 <div class="flex-center position-ref">
-    <a href="/">Click Here to go back home!</a>
+    <a href="/">Click here to go back home!</a>
+    <a href="/adm/home">Click here to go back to CMS!</a>
 </div>
 
 @endsection
