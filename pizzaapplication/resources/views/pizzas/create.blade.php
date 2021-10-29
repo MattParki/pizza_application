@@ -35,7 +35,7 @@
 </div>
 <div class="flex-center position-ref">
     <a href="/">Click here to go back home!</a>
-    <a href="/adm/home">Click here to go back to CMS!</a>
+    <a href="/home">Click here to go back to CMS!</a>
 </div>
 
 @endsection

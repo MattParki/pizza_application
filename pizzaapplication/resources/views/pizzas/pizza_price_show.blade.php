@@ -6,5 +6,5 @@
     </div>
 
 
-    <a href="/adm/home">Click here to go back to CMS!</a>
+    <a href="/home">Click here to go back to CMS!</a>
 @endsection
